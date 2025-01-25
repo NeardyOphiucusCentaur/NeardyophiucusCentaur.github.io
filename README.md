@@ -1,1 +1,0 @@
-# NeardyophiucusCentaur.github.io
