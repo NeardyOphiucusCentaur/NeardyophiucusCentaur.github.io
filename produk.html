@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Produk Bengkel Mobil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // JavaScript function to show an alert when a button is clicked
+        function handleClick(productName) {
+            alert("Anda telah memilih untuk membeli " + productName);
+        }
+
+        // JavaScript function to display the current date
+        function displayDate() {
+            const today = new Date();
+            document.getElementById("current-date").innerText = today.toDateString();
+        }
+
+        // Call displayDate when the page loads
+        window.onload = displayDate;
+    </script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-4">
+        <h1 class="text-center text-2xl font-bold">Daftar Produk & Layanan MobilFix Center</h1>
+        <nav class="flex justify-center mt-4">
+            <a href="beranda.html" class="text-white px-3 py-2 rounded hover:bg-blue-500">Home</a>
+            <a href="produk.html" class="text-white px-3 py-2 rounded hover:bg-blue-500">Produk & Layanan</a>
+            <a href="mekanik.html" class="text-white px-3 py-2 rounded hover:bg-blue-500">Booking</a>
+            <a href="transaksi.html" class="text-white px-3 py-2 rounded hover:bg-blue-500">Transaksi</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Contoh produk -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://media.monotaro.id/mid01/full/Otomotif%2C%20Truk%20%26%20Sepeda%20Motor/Oli%2C%20Bahan%20Kimia%2C%20Perbaikan/Oli%20Otomotive/Peralatan%20Oli/Pertamina%20Mesran%20SPR%20Min%2020W-50%20SG%2FCD/Pertamina%20Mesran%20SPR%20Min%2020W-50%20SG%2FCD%204L%201gallon/r9S022655981-1.jpg" alt="Produk 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Oli Mesin</h2>
+                    <p class="text-gray-700 mb-4">Oli mesin berkualitas untuk performa mobil yang optimal.</p>
+                    <p class="text-blue-600 font-semibold">Rp 150.000</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="handleClick('Oli Mesin')">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <!-- Produk lainnya -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="data:image/jpeg;base64,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" alt="Produk 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Aki Mobil</h2>
+                    <p class="text-gray-700 mb-4">Aki mobil tahan lama dengan kualitas terbaik.</p>
+                    <p class="text-blue-600 font-semibold">Rp 850.000</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="handleClick('Aki Mobil')">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSpnrV8QkgqW6__yIje4tDiMoxgqs647G6EA&s" alt="Produk 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">Kampas Rem</h2>
+                    <p class="text-gray-700 mb-4">Kampas rem untuk keamanan berkendara Anda.</p>
+                    <p class="text-blue-600 font-semibold">Rp 300.000</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="handleClick('Kampas Rem')">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container my-5" style="justify-items: center; margin-left: 200px;">
+        <h1 class="text-3xl font-bold text-center mb-5">MobilFix Services</h1>
+
+        <!-- Services Section -->
+        <div class="row" style="text-align: center;">
+            <!-- Body Repair -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg rounded-lg">
+                    <div class="card-body">
+                        <h5 class="card-title font-bold text-xl">Body Repair</h5>
+                        <p class="card-text">Perbaikan dan perawatan bodi kendaraan untuk mengembalikan kondisi seperti baru.</p>
+                        <p class="text-muted">Harga: Rp 2.000.000 - Rp 10.000.000</p>
+                        <button class="btn btn-primary w-full" onclick="bookService('Body Repair')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Kecil -->
+            <div class="col-md-4 mb-4" style="text-align: center;">
+                <div class="card shadow-lg rounded-lg">
+                    <div class="card shadow-lg rounded-lg">
+                        <div class="card-body">
+                            <h5 class="card-title font-bold text-xl">Service Kecil</h5>
+                            <p class="card-text">Servis ringan seperti penggantian oli, pengecekan filter, dan pengisian cairan kendaraan.</p>
+                            <p class="text-muted">Harga: Rp 300.000 - Rp 800.000</p>
+                            <button class="btn btn-primary w-full" onclick="bookService('Service Kecil')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Besar -->
+            <div class="col-md-4 mb-4" style="text-align: center;">
+                <div class="card shadow-lg rounded-lg">
+                    <div class="card shadow-lg rounded-lg">
+                        <div class="card-body">
+                            <h5 class="card-title font-bold text-xl">Service Besar</h5>
+                            <p class="card-text">Servis menyeluruh yang mencakup perbaikan mesin, rem, dan komponen utama lainnya.</p>
+                            <p class="text-muted">Harga: Rp 3.000.000 - Rp 8.000.000</p>
+                            <button class="btn btn-primary w-full" onclick="bookService('Service Besar')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="mt-5 p-4 bg-white shadow-lg rounded-lg" style="text-align: center;">
+            <h2 class="text-2xl font-bold mb-4">Booking Form</h2>
+            <form onsubmit="handleFormSubmit(event)">
+                <div class="mb-3">
+                    <label for="customerName" class="form-label">Nama Pelanggan</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Masukkan nama Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="serviceType" class="form-label">Jenis Layanan</label>
+                    <select class="form-select" id="serviceType">
+                        <option selected>Pilih layanan...</option>
+                        <option value="Body Repair">Body Repair</option>
+                        <option value="Service Kecil">Service Kecil</option>
+                        <option value="Service Besar">Service Besar</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="appointmentDate" class="form-label">Tanggal Janji</label>
+                    <input type="date" class="form-control" id="appointmentDate">
+                </div>
+                <button type="submit" class="btn btn-success w-full">Konfirmasi Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; Develop By Mahasiswa IM-STT-NF 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function bookService(serviceName) {
+            alert(`Anda memilih layanan: ${serviceName}`);
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const customerName = document.getElementById('customerName').value;
+            const serviceType = document.getElementById('serviceType').value;
+            const appointmentDate = document.getElementById('appointmentDate').value;
+
+            if (!customerName || !serviceType || !appointmentDate) {
+                alert('Harap isi semua data yang diperlukan.');
+                return;
+            }
+
+            alert(`Booking berhasil!\nNama: ${customerName}\nLayanan: ${serviceType}\nTanggal: ${appointmentDate}`);
+        }
+    </script>
+</body>
+</html>
